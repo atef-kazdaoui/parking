@@ -58,7 +58,7 @@ public class Controller {
 		UserRegistration user = repo.findByEmailAndPassword(email, password);
 		
 		
-		if(email.equals("admin") && password.equals("admin"))
+		if ("admin".equals(email) && "admin".equals(password))
 		{
 			print=print + "<script>swal('Admin Login Sucessfully');</script>";	
 			mv.addObject("PrintSwal",print);
